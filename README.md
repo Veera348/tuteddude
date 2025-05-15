@@ -1,43 +1,86 @@
-# tuteddude
+# React Projects Showcase
 
-# Upto React Shopping Cart Assignment But not include
+This project is a multi-page React Single Page Application (SPA) showcasing various React functionalities including class/functional components, to-do apps, form validation, routing, lazy loading, and Bootstrap styling.
 
-## 📌 Objective
+## 🛠 Technologies Used
 
-The goal of this project is to build a functional shopping cart using React. This assignment demonstrates various React concepts, including:
+- React
+- React Router DOM
+- React Bootstrap
+- Bootstrap 5
+- Lazy Loading (React.lazy + Suspense)
+- JSX and Functional/Class Components
 
-- Component-based architecture
-- React Router for navigation
-- React Context API for global state
-- Reducer functions for managing complex state logic
-- Portals for modal dialogs
-- Refs and forwardRefs for form input control
+## 📁 Project Structure
 
----
+/src
+└── tasks
+├── ClassCounter.jsx
+├── FunctionalCounter.jsx
+├── TodoApp.jsx
+├── TodoAppRefined.jsx
+|── pages
+|    ├── Home.jsx
+|    ├── FormPage.jsx
+|    └── About.jsx
+└── App.jsx
 
-## ✅ Features Implemented
 
-- 🛒 A working shopping cart interface
-- 🧾 Add and remove items dynamically
-- 📦 Meals listing with individual meal components
-- 💡 Modal for cart display using React Portals
-- 🔄 Global cart management using Context and Reducers
-- 📝 Form input with validation using Refs
-- 🖱️ Responsive UI using React Bootstrap (optional)
+## 🚀 Features & Pages
 
----
+### 1. **Home Page** (`/home`)
+- Simple welcome screen.
+- Accessible via the Navbar dropdown.
+- Lists the other pages for navigation.
 
-## 🧰 Tech Stack
+### 2. **Class Counter** (`/class`)
+- A React class component.
+- Displays a counter with `+` and `-` buttons.
+- State managed using `this.state`.
 
-- **React** (via Vite or Create React App)
-- **JavaScript (ES6+)**
-- **React Router**
-- **React Context & Reducer**
-- **React Portals**
-- **React Bootstrap** (for styling)
-- **HTML5 + CSS3**
+### 3. **Functional Counter** (`/functional`)
+- A functional component using React Hooks (`useState`).
+- Similar counter interface as the class version.
 
----
+### 4. **To-Do App** (`/todo`)
+- Basic To-Do app using functional component and hooks.
+- Input field + button to add tasks to a list.
+- Displays items in a `<ul>`.
 
-## 🗂️ Folder Structure
+### 5. **To-Do App Refined** (`/todo-refined`)
+- Enhanced version with:
+  - Bootstrap layout (Cards, Forms, Buttons).
+  - Validation for empty input.
+  - "Delete" button for each item.
 
+### 6. **Form Page** (`/form`) — *Lazy Loaded*
+- Input form with validation:
+  - Required fields.
+  - Valid email format.
+  - Password length >= 8.
+- Uses React Bootstrap components like `Form`, `Button`.
+
+### 7. **About Page** (`/about`) — *Lazy Loaded*
+- Static information page.
+- Loaded using `React.lazy()` for performance.
+
+## 🧭 Routing
+
+Implemented using `react-router-dom`:
+- Navbar contains links to all features.
+- A fallback route shows a default project list with links.
+
+## 💡 Getting Started
+
+### Install dependencies:
+
+git clone https://github.com/Veera348/tuteddude.git
+
+```bash
+npm install
+
+npm run dev  # For Vite
+# OR
+npm start    # For Create React App
+
+npm run build
