@@ -1,3 +1,7 @@
+Deploye Link in netlify 
+
+https://reactbytutedude.netlify.app/
+
 # React Projects Showcase
 
 This project is a multi-page React Single Page Application (SPA) showcasing various React functionalities including class/functional components, to-do apps, form validation, routing, lazy loading, and Bootstrap styling.
